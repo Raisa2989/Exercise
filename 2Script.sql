@@ -12,7 +12,7 @@ CREATE TABLE IF NOT exists song (
     id_song SERIAL PRIMARY KEY,
 	name_song VARCHAR(60) NOT NULL,
 	duration INTEGER,
-	id_album INTEGER PRIMARY KEY REFERENCES album(id_album)
+	id_album INTEGER REFERENCES album(id_album)
 );
 CREATE TABLE IF NOT exists SongCollection (
     id SERIAL PRIMARY KEY,
